@@ -1,37 +1,20 @@
-function Header (props){
+import headerLogo from '../assets/logo.svg'
 
-    function OpenNav (){
-        console.log('menu bar')
-    }
+function Header (){
+
     return(
 
         <>
             <div className="header">
-                <span className="logo">CODEwithCREST</span>
-                <nav>
-                    <div className="nav-el">
-                        <ul>
-                            <a href="http://localhost:3000/#"><li>Home</li></a>
-                            <a href="http://localhost:3000/#"><li>About</li></a>
-                            <a href="http://localhost:3000/#"><li>Services</li></a>
-                            <a href="http://localhost:3000/#"><li>More</li></a>  
-                        </ul>
-                    </div>
-                    
-
-                </nav>
+                <img className='img-1' src={headerLogo}  alt="" />
+            </div>
+            <div>
+                <h1>A history of everything you copy</h1>
+                <p>clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
                 <div className="btn-hold">
-                    <button id="btn">{props.title}</button>
-                    <button id="btn">{props.name}</button>
+                    <button className='btn'>Download for ios</button>
+                    <button className='btn'>Download for MAc</button>
                 </div>
-
-                <div onClick={OpenNav} className="menu">
-                    <div className="menu-bar"></div>
-                    <div className="menu-bar"></div>
-                    <div className="menu-bar"></div>
-                </div>
-
-                
             </div>
         </>
     )
