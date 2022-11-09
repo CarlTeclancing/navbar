@@ -19,9 +19,9 @@ export default function Footer(){
                 <a href="../app.js">Install Guide</a>
             </nav>
             <div className="social">
-                <img src={facebook} alt="" />
-                <img src={twitter} alt="" />
-                <img src={ig} alt="" />
+                <img id='f-icon' src={facebook} alt="" />
+                <img id='f-icon' src={twitter} alt="" />
+                <img id='f-icon' src={ig} alt="" />
             </div>
         </footer>
         </>
